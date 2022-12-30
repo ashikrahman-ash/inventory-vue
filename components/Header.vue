@@ -15,6 +15,8 @@
                         <NuxtLink to="">Intergrations</NuxtLink>
                         <NuxtLink to="">Pricing</NuxtLink>
                         <NuxtLink to="">Help Center</NuxtLink>
+                        <NuxtLink to="/loginv2">Login V2</NuxtLink>
+                        <NuxtLink to="/registrationv2">Sign Up V2</NuxtLink>
                     </div>
                     <div class="login-btn text-white flex gap-8 items-center">
                         <NuxtLink to="/login">Login</NuxtLink>

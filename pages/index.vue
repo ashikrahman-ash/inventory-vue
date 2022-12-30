@@ -3,6 +3,7 @@
         <Header />
         <HomeHero />
         <h2 class="">Home page</h2>
+
     </div>
 </template>
 

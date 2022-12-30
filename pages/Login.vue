@@ -5,7 +5,9 @@
                 <div class="py-12 px-4 sm:px-6 lg:px-8 ">
                     <div class="w-full max-w-md space-y-8 login-wrap bg-white" >
                         <div>
-                            <img class="h-6 w-auto" src="../assets/img/logo.svg" alt="Your Company" />
+                            <NuxtLink to="/">
+                                <img class="h-6 w-auto" src="../assets/img/logo.svg" alt="Your Company" />
+                            </NuxtLink>
                             <h2 class="mt-6 text-4xl font-bold tracking-tight text-dark1">Sign in</h2>
                         </div>
                         <form class="mt-8 space-y-6" action="#" method="POST">

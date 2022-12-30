@@ -54,10 +54,6 @@
     
 }
 
-body {
-    font-family: 'Roobert';
-}
-
 
 /* Login page -/Start */
 .login-bg {
@@ -71,6 +67,10 @@ body {
     padding: 50px;
 }
 
+/* Login V2 */
+/* .slider-bg {
+    background-size: cover !important;
+} */
 /* Login page -/End */
 
 /* Hero section -/Start */
