@@ -1,3 +1,34 @@
+<script>
+import './loginslider.css';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination, Autoplay, Mousewheel } from "swiper";
+import "swiper/css/pagination";
+import 'swiper/css';
+
+
+export default {
+    name: "LoginSlider",
+
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        const onSwiper = (swiper) => {
+            console.log(swiper);
+        };
+        const onSlideChange = () => {
+            console.log('slide change');
+        };
+        return {
+            onSwiper,
+            onSlideChange,
+            modules: [Pagination, Autoplay, Mousewheel],
+        };
+    },
+};
+</script>
+
 <template>
     <div>
         <div class="justify-start">
@@ -59,34 +90,4 @@
     </div>
 </template>
 
-<script>
-    import './loginslider.css';
-    import { Swiper, SwiperSlide } from 'swiper/vue';
-    import { Pagination, Autoplay, Mousewheel } from "swiper";
-    import "swiper/css/pagination";
-    import 'swiper/css';
-
-
-    export default {
-        name: "LoginSlider",
-
-        components: {
-            Swiper,
-            SwiperSlide,
-        },
-        setup() {
-            const onSwiper = (swiper) => {
-                console.log(swiper);
-            };
-            const onSlideChange = () => {
-                console.log('slide change');
-            };
-            return {
-                onSwiper,
-                onSlideChange,
-                modules: [Pagination, Autoplay, Mousewheel],
-            };
-        },
-    };
-</script>
 

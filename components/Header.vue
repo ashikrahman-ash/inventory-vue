@@ -10,8 +10,8 @@
                     </div>
                     <div class="menu-bar text-white flex-auto flex items-center justify-center gap-8">
                         <NuxtLink to="/">Home</NuxtLink>
-                        <NuxtLink to="">Features</NuxtLink>
-                        <NuxtLink to="">Company</NuxtLink>
+                        <NuxtLink to="/features">Features</NuxtLink>
+                        <NuxtLink to="/json-data">Company</NuxtLink>
                         <NuxtLink to="">Intergrations</NuxtLink>
                         <NuxtLink to="">Pricing</NuxtLink>
                         <NuxtLink to="">Help Center</NuxtLink>

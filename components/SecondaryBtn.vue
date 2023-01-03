@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NuxtLink to="/" class="common-btn bg-secondary text-dark1 rounded-lg font-semibold flex">
+        <NuxtLink to="/" class="common-btn bg-secondary text-dark1 font-semibold flex py-[18px] px-[30px] rounded-lg">
             <slot />
         </NuxtLink>
     </div>
