@@ -12,7 +12,14 @@ module.exports = {
 		
 		fontFamily: {
 			roobert: "'Roobert', sans",
-		  },
+		},
+		
+		screens: {
+			'sm': '640px',
+			'md': '768px',
+			'lg': '992px',
+			'xl': '1110px',
+		},
 
         extend: {
 			

@@ -52,6 +52,11 @@
         font-display: swap;
     }
     
+    .wide-container {
+        max-width: 1440px;
+        width: 100%;
+    }
+    
 }
 
 

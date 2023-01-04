@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="header-wrap grid content-center z-20 relative">
-            <div class="container mx-auto">
+            <div class="wide-container mx-auto">
                 <div class="flex">
                     <div class="logo flex items-center">
                         <NuxtLink to="/">
@@ -13,10 +13,8 @@
                         <NuxtLink to="/features">Features</NuxtLink>
                         <NuxtLink to="/json-data">Company</NuxtLink>
                         <NuxtLink to="">Intergrations</NuxtLink>
-                        <NuxtLink to="">Pricing</NuxtLink>
-                        <NuxtLink to="">Help Center</NuxtLink>
-                        <NuxtLink to="/loginv2">Login V2</NuxtLink>
-                        <NuxtLink to="/registrationv2">Sign Up V2</NuxtLink>
+                        <NuxtLink to="/loginv2">Pricing</NuxtLink>
+                        <NuxtLink to="/registrationv2">Help Center</NuxtLink>
                     </div>
                     <div class="login-btn text-white flex gap-8 items-center">
                         <NuxtLink to="/login">Login</NuxtLink>
