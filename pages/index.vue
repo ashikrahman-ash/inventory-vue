@@ -410,7 +410,6 @@ export default {
             </section>
             <!-- /Call to action -End  -->
             
-            <Footer />
         </NuxtLayout>
     </div>
 </template>
