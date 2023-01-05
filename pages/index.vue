@@ -14,6 +14,17 @@ import flexibleIcon1 from '../assets/img/flexible-list-icon-1.svg'
 import flexibleIcon2 from '../assets/img/flexible-list-icon-2.svg'
 import flexibleIcon3 from '../assets/img/flexible-list-icon-3.svg'
 
+// Brand Logos
+import fedex from '../assets/img/fedex-logo.png'
+import shopify from '../assets/img/shopify-logo.png'
+import quickbooks from '../assets/img/quickbooks-logo.png'
+import woocommerce from '../assets/img/woocommerce-logo.png'
+import shipping from '../assets/img/shipping-logo.png'
+import ups from '../assets/img/ups-logo.png'
+import walmart from '../assets/img/walmart-logo.png'
+import ebay from '../assets/img/ebay-logo.png'
+import amazon from '../assets/img/amazon-logo.png'
+
 export default {
     data() {
         return {
@@ -71,7 +82,158 @@ export default {
                     icon: flexibleIcon3,
                     title: "Customize the filters according to your needs and liking. ",
                 },
-            ]
+            ],
+
+            brandLogos: [
+                {
+                    logo: fedex,
+                    altText: "FedEx logo",
+                },
+                {
+                    logo: shopify,
+                    altText: "Shopify logo",
+                },
+                {
+                    logo: quickbooks,
+                    altText: "Quickbooks logo",
+                },
+                {
+                    logo: woocommerce,
+                    altText: "Woocommerce logo",
+                },
+                {
+                    logo: shipping,
+                    altText: "Shipping logo",
+                },
+                {
+                    logo: ups,
+                    altText: "Ups logo",
+                },
+                {
+                    logo: walmart,
+                    altText: "Walmart logo",
+                },
+                {
+                    logo: ebay,
+                    altText: "Ebay logo",
+                },
+                {
+                    logo: amazon,
+                    altText: "Amazon logo",
+                },
+                
+                {
+                    logo: fedex,
+                    altText: "FedEx logo",
+                },
+                {
+                    logo: shopify,
+                    altText: "Shopify logo",
+                },
+                {
+                    logo: quickbooks,
+                    altText: "Quickbooks logo",
+                },
+                {
+                    logo: woocommerce,
+                    altText: "Woocommerce logo",
+                },
+                {
+                    logo: shipping,
+                    altText: "Shipping logo",
+                },
+                {
+                    logo: ups,
+                    altText: "Ups logo",
+                },
+                {
+                    logo: walmart,
+                    altText: "Walmart logo",
+                },
+                {
+                    logo: ebay,
+                    altText: "Ebay logo",
+                },
+                {
+                    logo: amazon,
+                    altText: "Amazon logo",
+                },
+            ],
+            brandLogos2: [
+                {
+                    logo: fedex,
+                    altText: "FedEx logo",
+                },
+                {
+                    logo: shopify,
+                    altText: "Shopify logo",
+                },
+                {
+                    logo: quickbooks,
+                    altText: "Quickbooks logo",
+                },
+                {
+                    logo: woocommerce,
+                    altText: "Woocommerce logo",
+                },
+                {
+                    logo: shipping,
+                    altText: "Shipping logo",
+                },
+                {
+                    logo: ups,
+                    altText: "Ups logo",
+                },
+                {
+                    logo: walmart,
+                    altText: "Walmart logo",
+                },
+                {
+                    logo: ebay,
+                    altText: "Ebay logo",
+                },
+                {
+                    logo: amazon,
+                    altText: "Amazon logo",
+                },
+                
+                {
+                    logo: fedex,
+                    altText: "FedEx logo",
+                },
+                {
+                    logo: shopify,
+                    altText: "Shopify logo",
+                },
+                {
+                    logo: quickbooks,
+                    altText: "Quickbooks logo",
+                },
+                {
+                    logo: woocommerce,
+                    altText: "Woocommerce logo",
+                },
+                {
+                    logo: shipping,
+                    altText: "Shipping logo",
+                },
+                {
+                    logo: ups,
+                    altText: "Ups logo",
+                },
+                {
+                    logo: walmart,
+                    altText: "Walmart logo",
+                },
+                {
+                    logo: ebay,
+                    altText: "Ebay logo",
+                },
+                {
+                    logo: amazon,
+                    altText: "Amazon logo",
+                },
+            ],
         }
     }
 }
@@ -152,7 +314,7 @@ export default {
                                             <img :src="flexibleListItem.icon" alt="" class="max-w-full w-full">
                                         </div>
                                         <div class="list-heading">
-                                            <p class=" text-lg font-medium text-dark2">
+                                            <p class="text-lg font-medium text-dark2">
                                                 {{ flexibleListItem.title }}
                                             </p>
                                         </div>
@@ -167,8 +329,139 @@ export default {
                 </div>
             </section>
             <!-- /Flexible facility - End  -->
+
+            <!-- Inventory profit cart / Start  -->
+            <section class="inventory-profit-chart bg-dark7 py-[100px]">
+                <div class="container mx-auto">
+                    <div class="inventoryProfit-inner">
+                        Lorem ipsum carom
+                    </div>
+                </div>
+            </section>
+            <!-- Inventory profit cart / End  -->
+
+            <!-- /Brand carousel - Start  -->
+            <section class="brand-carousel-wrapper bg-main_dark py-[100px] overflow-hidden relative">
+                <div class="text-center">
+                    <h2 class="text-5xl font-bold leading-[56px] text-white mb-5">
+                        Sell where you can make money
+                    </h2>
+                    <p class="text-lg font-medium text-white">
+                        Sync all channels right here on Inventory Ahead
+                    </p>
+
+                    <div class="brand-carousel-area py-12">
+                        <div class="marquee-vertical">
+                            <div class="top-slide-wrap flex gap-[30px] mb-[30px]">
+                                <div v-for="brandLogo in brandLogos" class="slide-item w-[200px] h-[91px] bg-white rounded-lg grid content-center justify-center flex-shrink-0">
+                                    <img :src="brandLogo.logo" :alt="brandLogo.altText" class="max-w-full w-auto">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="marquee-reverse">
+                            <div class="top-slide-wrap flex gap-[30px]">
+                                <div v-for="brandLogo in brandLogos" class="slide-item w-[200px] h-[91px] bg-white rounded-lg grid content-center justify-center flex-shrink-0">
+                                    <img :src="brandLogo.logo" :alt="brandLogo.altText" class=" max-w-full w-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <PrimaryBtn>See all integrations</PrimaryBtn>
+                </div>
+            </section>
+            <!-- /Brand carousel - End  -->
+
+            <!-- /Call to action -Start  -->
+            <section class="call-to-action my-[100px]">
+                <div class="wide-container mx-auto call-to-action-bg rounded-[20px] py-36">
+                    <div class="container mx-auto">
+                        <div class="grid grid-cols-2">
+                            <div class="col-span-1">
+                                <h2 class=" text-5xl font-bold leading-[56px] text-white mb-12">
+                                    You do you, <br class="hidden lg:block" /> We will help you expand
+                                </h2>
+                                <div class="callToAction-form flex gap-[30px] flex-wrap items-center">
+                                    <div>
+                                        <input id="email-address" name="email" type="email" autocomplete="email" required="" class="relative block w-full appearance-none rounded-lg border-2 border-dark5 px-5 py-[15px] text-dark1 placeholder-dark3 focus:outline-none font-medium min-w-[255px]" placeholder="Email address" />
+                                    </div>
+                                    <div class="">
+                                        <div class="inline-block">
+                                            <NuxtLink to="/"
+                                                class="common-btn py-[18px] px-[30px] bg-secondary text-dark1 rounded-lg flex gap-2 justify-center items-center font-semibold ">
+                                                <span>
+                                                    Sign up today
+                                                </span>
+                                                <span>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.0254 4.94189L17.0837 10.0002L12.0254 15.0586" stroke="#06021C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.91699 10H16.942" stroke="#06021C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                            </NuxtLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Call to action -End  -->
             
+            <Footer />
         </NuxtLayout>
     </div>
 </template>
 
+
+
+<style scoped>
+.call-to-action-bg {
+    background: url('../assets/img/call-to-action-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-slide-wrap {
+    animation: animated-slide 60s linear infinite;
+}
+@keyframes animated-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-230px * 9));
+    }
+}
+
+.marquee-reverse .top-slide-wrap {
+    animation-direction: reverse;
+    animation-delay: -3s;
+}
+
+.brand-carousel-wrapper::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 470px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #0B0140 0%, rgba(11, 1, 64, 0) 100%);
+    z-index: 99;
+}
+
+.brand-carousel-wrapper::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 470px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(270deg, #0B0140 0%, rgba(11, 1, 64, 0) 100%);;
+    z-index: 99;
+}
+
+</style>
