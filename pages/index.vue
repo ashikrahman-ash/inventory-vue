@@ -341,7 +341,7 @@ export default {
             <!-- Inventory profit cart / End  -->
 
             <!-- /Brand carousel - Start  -->
-            <section class="brand-carousel-wrapper bg-main_dark py-[100px] overflow-hidden relative">
+            <section class="brand-carousel-wrapper">
                 <div class="text-center">
                     <h2 class="text-5xl font-bold leading-[56px] text-white mb-5">
                         Sell where you can make money
@@ -373,8 +373,115 @@ export default {
             </section>
             <!-- /Brand carousel - End  -->
 
+            <!-- /Clients feedback - Start  -->
+            <!-- <section class=" py-[100px]">
+                <div class="container mx-auto">
+                    <h2 class=" text-5xl leading-[56px] font-bold text-dark1 pb-14 text-center">
+                        What clients say
+                    </h2>
+                    <div class="grid grid-cols-3 gap-[30px]">
+                        <div class="clients-feedback-item col-span-1 text-center">
+                            <div class="bg-white border border-dark5 rounded-2xl p-[30px] shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
+                                <div class="quote-icon mb-5">
+                                    <img src="../assets/img/clients-feedback-quote.svg" alt="Quote">
+                                </div>
+                                <p class=" text-base leading-[30px] font-normal text-dark2 pb-12">
+                                    This platform is one of the best companies I have dealt with in US. They’re always happy to help, and i wouldn’t hesitate to recommend them.This platform is one of the best companies I have dealt.
+                                </p>
+                                <div class="ratings-wrap">
+                                    <div class="rating-icon flex gap-[6px] justify-center">
+                                        <span>
+                                            <img src="../assets/img/five-start-ratings-icon.svg" alt="Ratings" >
+                                        </span>
+                                        <span class=" text-xs leading-5 font-medium text-dark3">
+                                            4.5/5
+                                        </span>
+                                    </div>
+                                    <h4 class="author-name text-[22px] leading-8 text-dark1 font-semibold mt-[3px] mb-[5px]">
+                                        Daniel Anderson
+                                    </h4>
+                                    <div class="verify-status flex gap-[5px] justify-center items-center">
+                                        <div class="verify-badge">
+                                            <img src="../assets/img/verify-badge-icon.svg" alt="Verify icon" >
+                                        </div>
+                                        <p class="text-xs leading-5 font-normal text-dark4">
+                                            Verified Customer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-feedback-item col-span-1 text-center">
+                            <div class="bg-white border border-dark5 rounded-2xl p-[30px] shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
+                                <div class="quote-icon mb-5">
+                                    <img src="../assets/img/clients-feedback-quote.svg" alt="Quote">
+                                </div>
+                                <p class=" text-base leading-[30px] font-normal text-dark2 pb-12">
+                                    This platform is one of the best companies I have dealt with in US. They’re always happy to help, and i wouldn’t hesitate to recommend them.This platform is one of the best companies I have dealt.
+                                </p>
+                                <div class="ratings-wrap">
+                                    <div class="rating-icon flex gap-[6px] justify-center">
+                                        <span>
+                                            <img src="../assets/img/five-start-ratings-icon.svg" alt="Ratings" >
+                                        </span>
+                                        <span class=" text-xs leading-5 font-medium text-dark3">
+                                            4.5/5
+                                        </span>
+                                    </div>
+                                    <h4 class="author-name text-[22px] leading-8 text-dark1 font-semibold mt-[3px] mb-[5px]">
+                                        Daniel Anderson
+                                    </h4>
+                                    <div class="verify-status flex gap-[5px] justify-center items-center">
+                                        <div class="verify-badge">
+                                            <img src="../assets/img/verify-badge-icon.svg" alt="Verify icon" >
+                                        </div>
+                                        <p class="text-xs leading-5 font-normal text-dark4">
+                                            Verified Customer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients-feedback-item col-span-1 text-center">
+                            <div class="bg-white border border-dark5 rounded-2xl p-[30px] shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
+                                <div class="quote-icon mb-5">
+                                    <img src="../assets/img/clients-feedback-quote.svg" alt="Quote">
+                                </div>
+                                <p class=" text-base leading-[30px] font-normal text-dark2 pb-12">
+                                    This platform is one of the best companies I have dealt with in US. They’re always happy to help, and i wouldn’t hesitate to recommend them.This platform is one of the best companies I have dealt.
+                                </p>
+                                <div class="ratings-wrap">
+                                    <div class="rating-icon flex gap-[6px] justify-center">
+                                        <span>
+                                            <img src="../assets/img/five-start-ratings-icon.svg" alt="Ratings" >
+                                        </span>
+                                        <span class=" text-xs leading-5 font-medium text-dark3">
+                                            4.5/5
+                                        </span>
+                                    </div>
+                                    <h4 class="author-name text-[22px] leading-8 text-dark1 font-semibold mt-[3px] mb-[5px]">
+                                        Daniel Anderson
+                                    </h4>
+                                    <div class="verify-status flex gap-[5px] justify-center items-center">
+                                        <div class="verify-badge">
+                                            <img src="../assets/img/verify-badge-icon.svg" alt="Verify icon" >
+                                        </div>
+                                        <p class="text-xs leading-5 font-normal text-dark4">
+                                            Verified Customer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- /Clients feedback - End  -->
+
+            <ClientsFeedback />
+
             <!-- /Call to action -Start  -->
-            <section class="call-to-action my-[100px]">
+            <section class="call-to-action mb-[100px]">
                 <div class="wide-container mx-auto call-to-action-bg rounded-[20px] py-36">
                     <div class="container mx-auto">
                         <div class="grid grid-cols-2">
@@ -441,26 +548,12 @@ export default {
     animation-delay: -3s;
 }
 
-.brand-carousel-wrapper::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 470px;
-    left: 0;
-    top: 0;
-    background: linear-gradient(90deg, #0B0140 0%, rgba(11, 1, 64, 0) 100%);
-    z-index: 99;
+
+.clients-feedback-wrapper {
+    background: linear-gradient(180deg, #F9F8FC 0%, rgba(249, 248, 252, 0) 100%);
 }
 
-.brand-carousel-wrapper::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 470px;
-    right: 0;
-    top: 0;
-    background: linear-gradient(270deg, #0B0140 0%, rgba(11, 1, 64, 0) 100%);;
-    z-index: 99;
-}
+
+
 
 </style>

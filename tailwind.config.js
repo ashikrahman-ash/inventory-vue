@@ -59,6 +59,8 @@ module.exports = {
 				//Base colors
 				white: "#FFFFFF",
 				black: "#000000",
+
+				dark_shade: "#635C88",
 		  
 			  },
 		},
