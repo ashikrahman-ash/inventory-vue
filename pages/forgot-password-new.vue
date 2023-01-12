@@ -32,7 +32,7 @@
                                                     class="relative block w-full appearance-none rounded-lg border-2 border-dark5 px-3 py-2 text-dark1 placeholder-dark4 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 font-medium" placeholder="Email address" />
                                             </div>
 
-                                            <NuxtLink to="/loginv2">
+                                            <NuxtLink to="/login-new">
                                                 <button type="submit"
                                                     class="group relative flex w-full justify-center rounded-md bg-main_purple text-lg py-2 px-4 font-semibold text-white hover:bg-indigo-700 focus:outline-none mt-7">
                                                     Reset
@@ -43,7 +43,7 @@
 
                                     <div class="">
                                         <p class="mt-12 font-medium text-dark2">
-                                        Don't have an account yet ? <NuxtLink class="text-main_purple" to="/registrationv2">Create an account</NuxtLink>
+                                        Don't have an account yet ? <NuxtLink class="text-main_purple" to="/registration-new">Create an account</NuxtLink>
                                     </p></div>
                                 </div>
                             </div>

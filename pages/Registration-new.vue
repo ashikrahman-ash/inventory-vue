@@ -55,11 +55,11 @@
 
                                                 <div class="">
                                                     <NuxtLink class="text-sm text-main_purple font-medium"
-                                                        to="/forgot-passwordv2">Forgot password?</NuxtLink>
+                                                        to="/forgot-password-new">Forgot password?</NuxtLink>
                                                 </div>
                                             </div>
 
-                                            <NuxtLink to="/registrationv2">
+                                            <NuxtLink to="/registration-new">
                                                 <button type="submit"
                                                     class="group relative flex w-full justify-center rounded-md bg-main_purple text-lg py-2 px-4 font-semibold text-white hover:bg-indigo-700 focus:outline-none mt-7">
                                                     Sign Up
@@ -70,7 +70,7 @@
 
                                     <div class="">
                                         <p class="mt-12 font-medium text-dark2">
-                                            Already have an account? <NuxtLink class="text-main_purple" to="/loginv2">Sign in</NuxtLink>
+                                            Already have an account? <NuxtLink class="text-main_purple" to="/login-new">Sign in</NuxtLink>
                                     </p></div>
                                 </div>
                             </div>

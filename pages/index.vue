@@ -25,11 +25,23 @@ import walmart from '../assets/img/walmart-logo.png'
 import ebay from '../assets/img/ebay-logo.png'
 import amazon from '../assets/img/amazon-logo.png'
 
+
+//Inventory profit cart
+import manegeControl from '../assets/img/manege-control.svg'
+import accurateData from '../assets/img/accurate-data.svg'
+import workflowIllustration from '../assets/img/work-flow-illustration.svg'
+import workFlowStepIcon from '../assets/img/work-flow-step-icon.svg'
+
+
 export default {
     data() {
         return {
             expandProfit,
             flexibleFacility,
+            manegeControl,
+            accurateData,
+            workflowIllustration,
+            workFlowStepIcon,
 
             services: [
                 {
@@ -334,7 +346,106 @@ export default {
             <section class="inventory-profit-chart bg-dark7 py-[100px]">
                 <div class="container mx-auto">
                     <div class="inventoryProfit-inner">
-                        Lorem ipsum carom
+                        <div class="inventory-icon-boxs flex items-center gap-4 mb-[30px]">
+                            <div class="single-box bg-white rounded-xl flex gap-5 items-center p-6 flex-auto">
+                                <div class="">
+                                    <img :src="manegeControl" alt="">
+                                </div>
+                                <div class="">
+                                    <h5 class=" text-dark1 font-bold text-[22px] leading-8 pb-1">
+                                        Inventory
+                                    </h5>
+                                    <p class=" text-main_purple font-medium">
+                                        Manage Control
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-box flex items-center justify-center flex-auto">
+                                <span class=" text-dark1 font-bold text-[28px] leading-9">
+                                    +
+                                </span>
+                            </div>
+                            <div class="single-box bg-white rounded-xl flex gap-5 items-center p-6 flex-auto">
+                                <div class="">
+                                    <img :src="accurateData" alt="">
+                                </div>
+                                <div class="">
+                                    <h5 class=" text-dark1 font-bold text-[22px] leading-8 pb-1">
+                                        Profit
+                                    </h5>
+                                    <p class=" text-main_purple font-medium">
+                                        Accurate Data Analytics
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-box flex items-center justify-center flex-auto">
+                                <span class=" text-dark1 font-bold text-[28px] leading-9">
+                                    =
+                                </span>
+                            </div>
+                            <div class="single-box profit-bg-shape bg-white rounded-xl p-6 max-w-[350px] w-full">
+                                <ul class="text-[22px] leading-8 font-bold text-dark1 pl-4">
+                                    <li class="singleBox-listStyle">Reorder</li>
+                                    <li class="singleBox-listStyle">Replenish</li>
+                                    <li class="singleBox-listStyle">Maintain Stock</li>
+                                </ul>
+                                <p class="text-main_purple font-medium pl-4 pt-3">
+                                    Smart Budget
+                                </p>
+                            </div>
+                        </div>
+                        <div class="inventory-profit-steps py-[50px] px-[30px] rounded-[30px] bg-white">
+                            <div class="grid grid-cols-12 gap-7">
+                                <div class=" col-span-3">
+                                    <div class="steps-wrap bg-dark7 rounded-xl p-5 h-full">
+                                        <div class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
+                                            <div class="">
+                                                <img :src="workFlowStepIcon" alt="">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-main_purple font-bold text-xs leading-5 pb-1">
+                                                    Step 1
+                                                </h5>
+                                                <p class="text-dark1 text-lg leading-6 font-medium">
+                                                    Purchase
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
+                                            <div class="">
+                                                <img :src="workFlowStepIcon" alt="">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-main_purple font-bold text-xs leading-5 pb-1">
+                                                    Step 2
+                                                </h5>
+                                                <p class="text-dark1 text-lg leading-6 font-medium">
+                                                    Replenish
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
+                                            <div class="">
+                                                <img :src="workFlowStepIcon" alt="">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-main_purple font-bold text-xs leading-5 pb-1">
+                                                    Step 3
+                                                </h5>
+                                                <p class="text-dark1 text-lg leading-6 font-medium">
+                                                    Ship
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-9">
+                                    <div class="h-full">
+                                        <img :src="workflowIllustration" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -374,111 +485,8 @@ export default {
             <!-- /Brand carousel - End  -->
 
             <!-- /Clients feedback - Start  -->
-            <!-- <section class=" py-[100px]">
-                <div class="container mx-auto">
-                    <h2 class=" text-5xl leading-[56px] font-bold text-dark1 pb-14 text-center">
-                        What clients say
-                    </h2>
-                    <div class="grid grid-cols-3 gap-[30px]">
-                        <div class="clients-feedback-item col-span-1 text-center">
-                            <div class="bg-white border border-dark5 rounded-2xl p-[30px] shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
-                                <div class="quote-icon mb-5">
-                                    <img src="../assets/img/clients-feedback-quote.svg" alt="Quote">
-                                </div>
-                                <p class=" text-base leading-[30px] font-normal text-dark2 pb-12">
-                                    This platform is one of the best companies I have dealt with in US. They’re always happy to help, and i wouldn’t hesitate to recommend them.This platform is one of the best companies I have dealt.
-                                </p>
-                                <div class="ratings-wrap">
-                                    <div class="rating-icon flex gap-[6px] justify-center">
-                                        <span>
-                                            <img src="../assets/img/five-start-ratings-icon.svg" alt="Ratings" >
-                                        </span>
-                                        <span class=" text-xs leading-5 font-medium text-dark3">
-                                            4.5/5
-                                        </span>
-                                    </div>
-                                    <h4 class="author-name text-[22px] leading-8 text-dark1 font-semibold mt-[3px] mb-[5px]">
-                                        Daniel Anderson
-                                    </h4>
-                                    <div class="verify-status flex gap-[5px] justify-center items-center">
-                                        <div class="verify-badge">
-                                            <img src="../assets/img/verify-badge-icon.svg" alt="Verify icon" >
-                                        </div>
-                                        <p class="text-xs leading-5 font-normal text-dark4">
-                                            Verified Customer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clients-feedback-item col-span-1 text-center">
-                            <div class="bg-white border border-dark5 rounded-2xl p-[30px] shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
-                                <div class="quote-icon mb-5">
-                                    <img src="../assets/img/clients-feedback-quote.svg" alt="Quote">
-                                </div>
-                                <p class=" text-base leading-[30px] font-normal text-dark2 pb-12">
-                                    This platform is one of the best companies I have dealt with in US. They’re always happy to help, and i wouldn’t hesitate to recommend them.This platform is one of the best companies I have dealt.
-                                </p>
-                                <div class="ratings-wrap">
-                                    <div class="rating-icon flex gap-[6px] justify-center">
-                                        <span>
-                                            <img src="../assets/img/five-start-ratings-icon.svg" alt="Ratings" >
-                                        </span>
-                                        <span class=" text-xs leading-5 font-medium text-dark3">
-                                            4.5/5
-                                        </span>
-                                    </div>
-                                    <h4 class="author-name text-[22px] leading-8 text-dark1 font-semibold mt-[3px] mb-[5px]">
-                                        Daniel Anderson
-                                    </h4>
-                                    <div class="verify-status flex gap-[5px] justify-center items-center">
-                                        <div class="verify-badge">
-                                            <img src="../assets/img/verify-badge-icon.svg" alt="Verify icon" >
-                                        </div>
-                                        <p class="text-xs leading-5 font-normal text-dark4">
-                                            Verified Customer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clients-feedback-item col-span-1 text-center">
-                            <div class="bg-white border border-dark5 rounded-2xl p-[30px] shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
-                                <div class="quote-icon mb-5">
-                                    <img src="../assets/img/clients-feedback-quote.svg" alt="Quote">
-                                </div>
-                                <p class=" text-base leading-[30px] font-normal text-dark2 pb-12">
-                                    This platform is one of the best companies I have dealt with in US. They’re always happy to help, and i wouldn’t hesitate to recommend them.This platform is one of the best companies I have dealt.
-                                </p>
-                                <div class="ratings-wrap">
-                                    <div class="rating-icon flex gap-[6px] justify-center">
-                                        <span>
-                                            <img src="../assets/img/five-start-ratings-icon.svg" alt="Ratings" >
-                                        </span>
-                                        <span class=" text-xs leading-5 font-medium text-dark3">
-                                            4.5/5
-                                        </span>
-                                    </div>
-                                    <h4 class="author-name text-[22px] leading-8 text-dark1 font-semibold mt-[3px] mb-[5px]">
-                                        Daniel Anderson
-                                    </h4>
-                                    <div class="verify-status flex gap-[5px] justify-center items-center">
-                                        <div class="verify-badge">
-                                            <img src="../assets/img/verify-badge-icon.svg" alt="Verify icon" >
-                                        </div>
-                                        <p class="text-xs leading-5 font-normal text-dark4">
-                                            Verified Customer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- /Clients feedback - End  -->
-
             <ClientsFeedback />
+            <!-- /Clients feedback - End  -->
 
             <!-- /Call to action -Start  -->
             <section class="call-to-action mb-[100px]">
@@ -553,7 +561,20 @@ export default {
     background: linear-gradient(180deg, #F9F8FC 0%, rgba(249, 248, 252, 0) 100%);
 }
 
+.profit-bg-shape {
+    background: url('../assets/img/inventory-profit-shape.svg'), linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-position-x: 90%, center;
+    background-position-y: 70%, center;
+}
 
+.steps-wrap {
+    background: url('../assets/img/work-flow-step-bg-shape.png'), linear-gradient(180deg, #F9F8FC 0%, rgba(249, 248, 252, 1) 100%);
+    background-repeat: no-repeat;
+    background-position-x: 50%, center;
+    background-position-y: 95%, center;
+    background-size: 80%, 100%;
+}
 
 
 </style>

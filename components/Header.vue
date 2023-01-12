@@ -11,16 +11,14 @@
                     <div class="menu-bar text-white flex-auto flex items-center justify-center gap-8">
                         <NuxtLink to="/">Home</NuxtLink>
                         <NuxtLink to="/features">Features</NuxtLink>
-                        <NuxtLink to="/json-data">Company</NuxtLink>
+                        <NuxtLink to="/loginv2json-data">Company</NuxtLink>
                         <NuxtLink to="">Intergrations</NuxtLink>
-                        <NuxtLink to="/loginv2">Pricing</NuxtLink>
-                        <NuxtLink to="/registrationv2">Help Center</NuxtLink>
+                        <NuxtLink to="/pricing-page">Pricing</NuxtLink>
+                        <NuxtLink to="/registration-new">Help Center</NuxtLink>
                     </div>
                     <div class="login-btn text-white flex gap-8 items-center">
-                        <NuxtLink to="/login">Login</NuxtLink>
-                        <NuxtLink to="/" class="">
-                            <SecondaryBtn>Try for Free</SecondaryBtn>
-                        </NuxtLink>
+                        <NuxtLink to="/login-new">Login</NuxtLink>
+                        <SecondaryBtn>Try for Free</SecondaryBtn>
                     </div>
                 </div>
             </div>
