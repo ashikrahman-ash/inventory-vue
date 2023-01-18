@@ -254,6 +254,11 @@ export default {
 <template>
     <div>
         <NuxtLayout>
+            <Head>
+                <Title>Home | Inventory Ahead Dashboard</Title>
+                <Meta name="description" content="Inventory Ahead Dashboard" />
+                <Style type="text/css" children="body { background-color: green; }" />
+            </Head>
 
             <HomeHero />
 

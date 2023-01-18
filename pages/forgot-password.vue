@@ -1,5 +1,10 @@
 <template>
-    <div> 
+    <div>
+        <Head>
+            <Title>Forgot password | Inventory Ahead Dashboard</Title>
+            <Meta name="description" content="Inventory Ahead Dashboard" />
+            <Style type="text/css" children="body { background-color: green; }" />
+        </Head>
         <div class="login-bg min-h-screen h-full grid items-center">
             <div class="xl:container mx-auto ">
                 <div class="py-12 px-4 sm:px-6 lg:px-8 ">

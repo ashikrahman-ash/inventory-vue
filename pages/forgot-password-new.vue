@@ -1,5 +1,10 @@
 <template>
     <div>
+        <Head>
+            <Title>Forgot password new | Inventory Ahead Dashboard</Title>
+            <Meta name="description" content="Inventory Ahead Dashboard" />
+            <Style type="text/css" children="body { background-color: green; }" />
+        </Head>
         <div class="grid grid-cols-12">
             <div class="col-span-6 ">
                 <div class="col-start-2 col-span-4 slider-bg">
