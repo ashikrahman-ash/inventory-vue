@@ -11,8 +11,8 @@
                     <div class="menu-bar text-white flex-auto flex items-center justify-center gap-8">
                         <NuxtLink to="/">Home</NuxtLink>
                         <NuxtLink to="/features">Features</NuxtLink>
-                        <NuxtLink to="/loginv2json-data">Company</NuxtLink>
-                        <NuxtLink to="">Intergrations</NuxtLink>
+                        <NuxtLink to="/company">Company</NuxtLink>
+                        <NuxtLink to="/integrations">Integrations</NuxtLink>
                         <NuxtLink to="/pricing-page">Pricing</NuxtLink>
                         <NuxtLink to="/registration-new">Help Center</NuxtLink>
                     </div>
