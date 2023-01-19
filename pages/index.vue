@@ -257,7 +257,7 @@ export default {
             <Head>
                 <Title>Home | Inventory Ahead Dashboard</Title>
                 <Meta name="description" content="Inventory Ahead Dashboard" />
-                <Style type="text/css" children="body { background-color: green; }" />
+                <Link></Link>
             </Head>
 
             <HomeHero />

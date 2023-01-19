@@ -1,5 +1,10 @@
 <template>
     <div class="container mx-auto">
+
+        <Head>
+            <Title>404 error | Inventory Ahead Dashboard</Title>
+            <Meta name="description" content="Inventory Ahead Dashboard" />
+        </Head>
         <div class=" flex justify-center items-center h-screen">
             <div class=" basis-2/5 text-center">
                 <div class=" mb-10">
@@ -13,7 +18,7 @@
                     <PrimaryBtn>Back to home</PrimaryBtn>
                 </NuxtLink>
 
-                
+
             </div>
         </div>
     </div>
@@ -21,7 +26,7 @@
 
 
 <script setup>
-    defineProps(['error'])
+defineProps(['error'])
 </script>
 
 <style scoped>

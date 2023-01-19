@@ -108,6 +108,7 @@ export default {
 					delay: 2000,
 					disableOnInteraction: false,
 				}"
+				
 				:pagination="{
 					clickable: true,
 				}"

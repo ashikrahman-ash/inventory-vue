@@ -107,7 +107,7 @@ export default {
                                 </div>
                             </div>
                             <div class="signUp-demo-btn flex gap-5 max-w-xs">
-                                <NuxtLink to="/registrationv2" class=" w-full">
+                                <NuxtLink to="/registration-new" class=" w-full">
                                     <button type="submit" class=" group relative flex items-center w-full justify-center rounded-md bg-main_purple text-lg py-2 px-4 h-[58px] font-semibold text-white hover:bg-main_purple/70 transition-all duration-200 focus:outline-none">
                                         
                                         Sign up
