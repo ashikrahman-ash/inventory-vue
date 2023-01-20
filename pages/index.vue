@@ -257,7 +257,6 @@ export default {
             <Head>
                 <Title>Home | Inventory Ahead Dashboard</Title>
                 <Meta name="description" content="Inventory Ahead Dashboard" />
-                <Link></Link>
             </Head>
 
             <HomeHero />
