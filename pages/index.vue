@@ -133,7 +133,7 @@ export default {
                     logo: amazon,
                     altText: "Amazon logo",
                 },
-                
+
                 {
                     logo: fedex,
                     altText: "FedEx logo",
@@ -208,7 +208,7 @@ export default {
                     logo: amazon,
                     altText: "Amazon logo",
                 },
-                
+
                 {
                     logo: fedex,
                     altText: "FedEx logo",
@@ -254,6 +254,7 @@ export default {
 <template>
     <div>
         <NuxtLayout>
+
             <Head>
                 <Title>Home | Inventory Ahead Dashboard</Title>
                 <Meta name="description" content="Inventory Ahead Dashboard" />
@@ -266,7 +267,8 @@ export default {
                 <div class="wide-container mx-auto pt-[100px] pb-[135px] px-40 mt-[-200px] bg-white rounded-[20px]">
                     <div class="services-box grid grid-cols-3 gap-[30px] mb-14">
 
-                        <div v-for="service in services" class="service-item pt-10 px-8 pb-8 bg-dark7 rounded-xl border-2 border-dark7 hover:border-dark5 hover:bg-white transition-colors duration-200">
+                        <div v-for="service in services"
+                            class="service-item pt-10 px-8 pb-8 bg-dark7 rounded-xl border-2 border-dark7 hover:border-dark5 hover:bg-white transition-colors duration-200">
                             <div class="service-icon mb-8">
                                 <img :src="service.icon" alt="" class=" max-w-full">
                             </div>
@@ -295,10 +297,12 @@ export default {
                                 Purchase with budget, expand with profit
                             </h2>
                             <p class=" text-base text-dark7 font-normal leading-[26px] mb-5">
-                                Easily identify your highest-performing products across channels to improve your sales strategy.
+                                Easily identify your highest-performing products across channels to improve your sales
+                                strategy.
                             </p>
                             <p class=" text-base text-dark7 font-normal leading-[26px]">
-                                Avoid overbuying, overstocking on non-essentials, get notifications when your most in demand, profitable items are running low and need immediate restocking
+                                Avoid overbuying, overstocking on non-essentials, get notifications when your most in
+                                demand, profitable items are running low and need immediate restocking
                             </p>
                             <div class="mt-10">
                                 <PrimaryBtn>Free demo</PrimaryBtn>
@@ -325,7 +329,8 @@ export default {
                             </h2>
                             <div class="border-y border-dark5 max-w-[435px]">
                                 <div v-for="flexibleListItem in flexibleListItems" class="list-item-wrap">
-                                    <div class="listItem flex gap-4 items-center p-5 rounded-xl bg-white hover:bg-dark7 transition-colors duration-200 hover:cursor-pointer">
+                                    <div
+                                        class="listItem flex gap-4 items-center p-5 rounded-xl bg-white hover:bg-dark7 transition-colors duration-200 hover:cursor-pointer">
                                         <div class="icon w-[42px] shrink-0">
                                             <img :src="flexibleListItem.icon" alt="" class="max-w-full w-full">
                                         </div>
@@ -402,7 +407,8 @@ export default {
                             <div class="grid grid-cols-12 gap-7">
                                 <div class=" col-span-3">
                                     <div class="steps-wrap bg-dark7 rounded-xl p-5 h-full">
-                                        <div class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
+                                        <div
+                                            class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
                                             <div class="">
                                                 <img :src="workFlowStepIcon" alt="">
                                             </div>
@@ -415,7 +421,8 @@ export default {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
+                                        <div
+                                            class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
                                             <div class="">
                                                 <img :src="workFlowStepIcon" alt="">
                                             </div>
@@ -428,7 +435,8 @@ export default {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
+                                        <div
+                                            class="single-box bg-white rounded-xl flex gap-4 items-center py-5 px-7 flex-auto border border-dark5 mb-4">
                                             <div class="">
                                                 <img :src="workFlowStepIcon" alt="">
                                             </div>
@@ -468,15 +476,17 @@ export default {
                     <div class="brand-carousel-area py-12">
                         <div class="marquee-vertical">
                             <div class="top-slide-wrap flex gap-[30px] mb-[30px]">
-                                <div v-for="brandLogo in brandLogos" class="slide-item w-[200px] h-[91px] bg-white rounded-lg grid content-center justify-center flex-shrink-0">
+                                <div v-for="brandLogo in brandLogos"
+                                    class="slide-item w-[200px] h-[91px] bg-white rounded-lg grid content-center justify-center flex-shrink-0">
                                     <img :src="brandLogo.logo" :alt="brandLogo.altText" class="max-w-full w-auto">
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="marquee-reverse">
                             <div class="top-slide-wrap flex gap-[30px]">
-                                <div v-for="brandLogo in brandLogos" class="slide-item w-[200px] h-[91px] bg-white rounded-lg grid content-center justify-center flex-shrink-0">
+                                <div v-for="brandLogo in brandLogos"
+                                    class="slide-item w-[200px] h-[91px] bg-white rounded-lg grid content-center justify-center flex-shrink-0">
                                     <img :src="brandLogo.logo" :alt="brandLogo.altText" class=" max-w-full w-auto">
                                 </div>
                             </div>
@@ -503,7 +513,10 @@ export default {
                                 </h2>
                                 <div class="callToAction-form flex gap-[30px] flex-wrap items-center">
                                     <div>
-                                        <input id="email-address" name="email" type="email" autocomplete="email" required="" class="relative block w-full appearance-none rounded-lg border-2 border-dark5 px-5 py-[15px] text-dark1 placeholder-dark3 focus:outline-none font-medium min-w-[255px]" placeholder="Email address" />
+                                        <input id="email-address" name="email" type="email" autocomplete="email"
+                                            required=""
+                                            class="relative block w-full appearance-none rounded-lg border-2 border-dark5 px-5 py-[15px] text-dark1 placeholder-dark3 focus:outline-none font-medium min-w-[255px]"
+                                            placeholder="Email address" />
                                     </div>
                                     <div class="">
                                         <div class="inline-block">
@@ -513,9 +526,14 @@ export default {
                                                     Sign up today
                                                 </span>
                                                 <span>
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12.0254 4.94189L17.0837 10.0002L12.0254 15.0586" stroke="#06021C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M2.91699 10H16.942" stroke="#06021C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.0254 4.94189L17.0837 10.0002L12.0254 15.0586"
+                                                            stroke="#06021C" stroke-width="2" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M2.91699 10H16.942" stroke="#06021C" stroke-width="2"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
                                                     </svg>
                                                 </span>
                                             </NuxtLink>
@@ -528,7 +546,7 @@ export default {
                 </div>
             </section>
             <!-- /Call to action -End  -->
-            
+
         </NuxtLayout>
     </div>
 </template>
@@ -579,6 +597,14 @@ export default {
     background-position-y: 95%, center;
     background-size: 80%, 100%;
 }
+
+
+
+
+
+
+
+
 
 
 </style>

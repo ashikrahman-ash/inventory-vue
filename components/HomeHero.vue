@@ -1,3 +1,9 @@
+<script>
+    export default {
+        
+    }
+</script>
+
 <template>
     <div>
         <div class="hero-area-wrap z-10 grid content-center">
@@ -7,7 +13,9 @@
                         <h1 class="text-[84px] leading-[92px] ">
                             <span class="font-black">Systemize</span> your <span class="font-black block">e-commerce</span> company
                         </h1>
-                        <p class="mt-8 mb-12">End-to-end e-commerce management</p>
+                        <p class="mt-8 mb-12">
+                            End-to-end e-commerce management
+                        </p>
 
                         <div class="flex gap-5">
                             <PrimaryBtn>Book a Demo</PrimaryBtn>
@@ -19,12 +27,6 @@
         </div>
     </div>
 </template>
-
-<script>
-    export default {
-        
-    }
-</script>
 
 <style scoped>
 .hero-area-wrap {
