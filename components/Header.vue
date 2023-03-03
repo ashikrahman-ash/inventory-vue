@@ -18,7 +18,9 @@
                     </div>
                     <div class="login-btn text-white flex gap-8 items-center">
                         <NuxtLink to="/login-new">Login</NuxtLink>
-                        <SecondaryBtn>Try for Free</SecondaryBtn>
+                        <SecondaryBtn>
+                            <NuxtLink to="/registration-new">Try for Free</NuxtLink>
+                        </SecondaryBtn>
                     </div>
                 </div>
             </div>

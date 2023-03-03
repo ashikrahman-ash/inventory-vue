@@ -35,4 +35,6 @@
     background-repeat: no-repeat, no-repeat;
     min-height: 1105px;
 }
+
+
 </style>
