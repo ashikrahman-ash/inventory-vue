@@ -273,7 +273,7 @@ export default {
                                 <img :src="service.icon" alt="" class=" max-w-full">
                             </div>
                             <h3 class="service-heading font-semibold text-dark1 text-4xl mb-5">
-                                 {{ service.name }}
+                                {{ service.name }}
                             </h3>
                             <p class=" text-dark2 text-lg">
                                 {{ service.content }}

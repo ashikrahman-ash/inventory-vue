@@ -1,7 +1,7 @@
 <template>
     <div class="inline-block">
         <NuxtLink to="/"
-            class="common-btn py-[17px] px-[29px] bg-main_purple text-white border border-main_purple rounded-lg flex gap-2 justify-center items-center font-semibold hover:bg-transparent hover:text-main_purple transition-colors duration-300 ease-in-out">
+            class="common-btn py-[17px] px-[29px] bg-main_purple text-white border border-main_purple rounded-lg flex gap-2 justify-center items-center font-semibold hover:bg-transparent hover:text-dark1 hover:border-secondary hover:bg-secondary transition-colors duration-300 ease-in-out">
             <span>
                 <slot />
             </span>
@@ -29,7 +29,7 @@ export default {
     transition: all .2s linear;
 }
 .common-btn:hover .icon-hover {
-    stroke: #2E00FF;
+    stroke: #06021C;
 }
 
 </style>

@@ -97,10 +97,10 @@ export default {
                                     <input type="text" name="price" id="price" class="block w-full bg-transparent border-2 rounded-lg h-[58px] border-dark_shade pl-[50px] pr-12 text-base font-medium leading-[18px] transition-colors duration-200 focus:border-secondary focus:outline-none text-dark4" placeholder="Enter email">
 
                                     <div class="absolute inset-y-0 right-0 flex items-center">
-                                        <NuxtLink to="/" class="bg-secondary h-full w-20 rounded-lg grid items-center justify-center hover:bg-secondary/90 transition-colors duration-200">
+                                        <NuxtLink to="/" class="bg-secondary h-full w-20 rounded-lg grid items-center justify-center hover:bg-main_purple transition-colors duration-200 group">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.16665 5.26667L13.2417 2.90834C16.4167 1.85001 18.1417 3.58334 17.0917 6.75834L14.7333 13.8333C13.15 18.5917 10.55 18.5917 8.96665 13.8333L8.26665 11.7333L6.16665 11.0333C1.40832 9.45001 1.40832 6.85834 6.16665 5.26667Z" stroke="#06021C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M8.42499 11.375L11.4083 8.3833" stroke="#06021C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path class="group-hover:stroke-white" d="M6.16665 5.26667L13.2417 2.90834C16.4167 1.85001 18.1417 3.58334 17.0917 6.75834L14.7333 13.8333C13.15 18.5917 10.55 18.5917 8.96665 13.8333L8.26665 11.7333L6.16665 11.0333C1.40832 9.45001 1.40832 6.85834 6.16665 5.26667Z" stroke="#06021C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path class="group-hover:stroke-white" d="M8.42499 11.375L11.4083 8.3833" stroke="#06021C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
                                         </NuxtLink>
                                     </div>
@@ -130,7 +130,7 @@ export default {
             <div class="container mx-auto text-white">
                 <div class="grid grid-cols-2 text-base font-medium text-dark4">
                     <div class="copy-write">
-                        Copyright © 2022 <NuxtLink to="/" class=" text-secondary uppercase hover:underline hover:underline-offset-1">INVENTORY AHEAD LLC</NuxtLink>. All rights reserved.
+                        Copyright © {{ new Date().getFullYear() }} <NuxtLink to="/" class=" text-secondary uppercase hover:underline hover:underline-offset-1">INVENTORY AHEAD LLC</NuxtLink>. All rights reserved.
                     </div>
                     <div class="social-media flex gap-5 justify-end">
                         <div class="">
