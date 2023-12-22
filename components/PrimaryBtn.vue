@@ -1,7 +1,7 @@
 <template>
     <div class="inline-block">
         <NuxtLink to="/"
-            class="common-btn py-[17px] px-[29px] bg-main_purple text-white border border-main_purple rounded-lg flex gap-2 justify-center items-center font-semibold hover:bg-transparent hover:text-dark1 hover:border-secondary hover:bg-secondary transition-colors duration-300 ease-in-out">
+            class="common-btn py-[17px] px-[29px] bg-main_purple text-white border border-main_purple rounded-lg flex gap-2 justify-center items-center font-semibold hover:bg-secondary hover:text-dark1 hover:border-secondary transition-all duration-300 ease-in-out">
             <span>
                 <slot />
             </span>
