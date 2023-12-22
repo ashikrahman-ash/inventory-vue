@@ -87,8 +87,8 @@
 
 @layer components {
 
-    .brand-carousel-wrapper {
-        @apply bg-main_dark py-[100px] overflow-hidden relative after:absolute after:right-0 after:top-0 after:h-full after:w-[470px] after:content-[''] after:z-10 before:content-[''] before:left-0 before:top-0 before:h-full before:w-[470px] before:absolute before:z-10 before:bg-gradient-to-r before:from-main_dark before:to-main_dark/0 after:bg-gradient-to-l after:from-main_dark after:to-main_dark/0;
+    .brand-carousel-area {
+        @apply relative after:absolute after:right-0 after:top-0 after:h-full after:w-[113px] md:after:w-[280px] lg:after:w-[470px] after:content-[''] after:z-10 before:content-[''] before:left-0 before:top-0 before:h-full before:w-[113px] md:before:w-[280px] lg:before:w-[470px] before:absolute before:z-10 before:bg-gradient-to-r before:from-main_dark before:to-main_dark/0 after:bg-gradient-to-l after:from-main_dark after:to-main_dark/0;
     }
 
     .singleBox-listStyle {

@@ -1,17 +1,8 @@
 <template>
     <div>
-        <NuxtLink to="/" class="common-btn bg-secondary hover:bg-main_purple transition-all duration-300 hover:text-white ease-in-out text-dark1 font-semibold flex py-[18px] px-[30px] rounded-lg">
+        <NuxtLink to="/" class="text-base md:text-lg py-3 md:py-[17px] px-7 bg-secondary hover:bg-main_purple transition-all duration-300 hover:text-white ease-in-out text-dark1 font-semibold inline-flex rounded-lg h-[50px] items-center min-w-[205px] justify-center">
             <slot />
         </NuxtLink>
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
-</script>
-
-<style scoped>
-
-</style>

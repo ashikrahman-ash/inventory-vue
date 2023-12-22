@@ -5,7 +5,6 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./loginslider.css";
 import { Pagination, Autoplay } from "swiper";
 
 
@@ -92,14 +91,14 @@ export default {
 </script>
 
 <template>
-	<section class="py-[100px] clients-feedback-bg">
-		<div class="container mx-auto">
-			<h2 class="text-5xl leading-[56px] font-bold text-dark1 pb-14 text-center">
+	<section class="py-[60px] lg:py-[100px] clients-feedback-bg">
+		<div class="container px-4">
+			<h2 class="text-[34px] lg:text-5xl leading-[1.16em] font-bold text-dark1 pb-14 text-center">
 				What clients say
 			</h2>
 			<div class="">
 				<swiper 
-				:slidesPerView="3"
+				:slidesPerView="1"
 				:spaceBetween="30"
 				:speed="1200"
 				:loop="true"
@@ -108,7 +107,24 @@ export default {
 					delay: 2000,
 					disableOnInteraction: false,
 				}"
-				
+				:breakpoints="{
+					'640': {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					'768': {
+						slidesPerView: 1,
+						spaceBetween: 30,
+					},
+					'991': {
+						slidesPerView: 2,
+						spaceBetween: 30,
+					},
+					'1199': {
+						slidesPerView: 3,
+						spaceBetween: 30,
+					},
+				}"
 				:pagination="{
 					clickable: true,
 				}"
@@ -147,6 +163,8 @@ export default {
 							</div>
 						</div>
 					</swiper-slide>
+
+					<div class="swiper-pagination"></div>
 				</swiper>
 
 			</div>
@@ -155,12 +173,24 @@ export default {
 </template>
 
 
-<style scoped>
+<style >
 .clients-feedback-bg {
     background: linear-gradient(180deg, #F9F8FC 0%, rgba(249, 248, 252, 0) 100%);
 }
 
-.swiper-pagination-bullet-active {
+.clientsFeedback .swiper-pagination {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.clientsFeedback .swiper-pagination .swiper-pagination-bullet {
+	background: rgba(46, 0, 255, 0.3) !important;
+	width: 6px !important;
+	height: 6px !important;
+	margin: 0 7px !important;
+	opacity: 1;
+}
+.clientsFeedback .swiper-pagination .swiper-pagination-bullet-active {
     background: #2E00FF !important;
     height: 10px !important;
     width: 10px !important;

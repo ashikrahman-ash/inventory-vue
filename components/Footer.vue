@@ -25,10 +25,10 @@ export default {
 
 <template>
     <footer class="bg-main_dark">
-        <div class="footer-top pt-[100px] pb-[90px]">
-            <div class="container mx-auto text-white">
-                <div class="grid grid-cols-12">
-                    <div class="footer-widget col-span-3">
+        <div class="footer-top pt-[60px] lg:pt-[100px] pb-[50px] lg:pb-[90px]">
+            <div class="container px-4 text-white">
+                <div class="grid grid-cols-12 gap-7 lg:gap-0">
+                    <div class="footer-widget col-span-6 md:col-span-6 lg:col-span-3 order-1">
                         <h5 class="text-lg font-semibold text-dark6 pb-5">Features</h5>
                         <ul class="">
                             <li v-for="featuresMenu in featuresMenus">
@@ -36,7 +36,7 @@ export default {
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-widget col-span-2 -ml-2">
+                    <div class="footer-widget col-span-6 md:col-span-6 lg:col-span-2 md:-ml-2 order-3">
                         <h5 class="text-lg font-semibold text-dark6 pb-5">Integrations</h5>
                         <ul class="">
                             <li v-for="integration in integrations">
@@ -44,7 +44,7 @@ export default {
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-widget col-span-3">
+                    <div class="footer-widget col-span-6 md:col-span-6 lg:col-span-3 order-2">
                         <h5 class="text-lg font-semibold text-dark6 pb-5">Company</h5>
                         <ul class="">
                             <li v-for="company in companys">
@@ -52,7 +52,7 @@ export default {
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-widget col-span-4">
+                    <div class="footer-widget col-span-full md:col-span-6 lg:col-span-4 order-4">
                         <h5 class="text-lg font-semibold text-dark6 pb-5">Contact us</h5>
                         <ul class=" flex flex-col gap-1 pb-8">
                             <li class="flex gap-3 items-center">
@@ -94,7 +94,7 @@ export default {
                                         </span>
                                     </div>
 
-                                    <input type="text" name="price" id="price" class="block w-full bg-transparent border-2 rounded-lg h-[58px] border-dark_shade pl-[50px] pr-12 text-base font-medium leading-[18px] transition-colors duration-200 focus:border-secondary focus:outline-none text-dark4" placeholder="Enter email">
+                                    <input type="text" name="price" id="price" class="block w-full bg-main_dark border-2 rounded-lg h-[58px] border-dark_shade pl-[50px] pr-12 text-base font-medium leading-[18px] transition-colors duration-200 focus:border-secondary focus:outline-none text-dark4" placeholder="Enter email">
 
                                     <div class="absolute inset-y-0 right-0 flex items-center">
                                         <NuxtLink to="/" class="bg-secondary h-full w-20 rounded-lg grid items-center justify-center hover:bg-main_purple transition-colors duration-200 group">
@@ -128,11 +128,11 @@ export default {
 
         <div class="footer-bottom py-[18px] border-t border-white/20">
             <div class="container mx-auto text-white">
-                <div class="grid grid-cols-2 text-base font-medium text-dark4">
-                    <div class="copy-write">
+                <div class="grid grid-cols-1 md:grid-cols-2 text-base gap-4 font-medium text-dark4">
+                    <div class="copy-write text-center md:text-start">
                         Copyright © {{ new Date().getFullYear() }} <NuxtLink to="/" class=" text-secondary uppercase hover:underline hover:underline-offset-1">INVENTORY AHEAD LLC</NuxtLink>. All rights reserved.
                     </div>
-                    <div class="social-media flex gap-5 justify-end">
+                    <div class="social-media flex gap-5 justify-center md:justify-end">
                         <div class="">
                             Stay Connected:
                         </div>

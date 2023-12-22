@@ -1,5 +1,4 @@
 <script>
-import './loginslider.css';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Autoplay, Mousewheel } from "swiper";
 import "swiper/css/pagination";
@@ -44,7 +43,7 @@ export default {
             :modules="modules"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
-            class="mySwiper"
+            class="loginSlider"
             :autoplay="{
                 delay: 5000,
                 disableOnInteraction: false,
@@ -89,5 +88,55 @@ export default {
         </div>
     </div>
 </template>
+
+<style>
+.loginSlider {
+    height: 100vh;
+    /* background: url('../assets/img/login-2-bg.jpg') no-repeat !important;
+    background-size: cover; */
+}
+
+.slider-bg {
+    background: url('../assets/img/login-2-bg.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100svb;
+    height: 100%;
+}
+.loginSlider .swiper-slide {
+    text-align: start;    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.loginSlider .slide-content {
+    max-width: 540px;
+    text-align: start;
+    padding-right: 50px;
+}
+.loginSlider .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 1);
+    height: 8px;
+    width: 8px;
+    margin: 10px 0 !important;
+    opacity: 0.2;
+}
+.loginSlider .swiper-pagination-bullet-active {
+    background: #4AF8E3;
+    height: 8px;
+    width: 8px;
+    opacity: 1;
+}
+.loginSlider .swiper-pagination {
+    left: 40px;
+}
+
+.quote-icon {
+    position: absolute;
+    left:-44px;
+    top: -85px;
+    z-index: -10;
+}
+</style>
 
 
