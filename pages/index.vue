@@ -264,7 +264,7 @@ export default {
 
             <!-- /Services area - Start  -->
             <section class="services-wrapper mx-4">
-                <div class="wide-container lg:mx-auto">
+                <div class="container lg:mx-auto">
                     <div class="pt-5 lg:pt-[100px] pb-[60px] lg:pb-[135px] px-4 lg:px-40 mt-[-200px] bg-white rounded-[20px]">
                         <div class="services-box grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-[30px] mb-14">
                             <div v-for="service in services"

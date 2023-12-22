@@ -1,13 +1,13 @@
 <template>
     <header class="header-wrap grid content-center z-20 relative">
-        <div class="wide-container mx-auto px-4">
+        <div class="container px-4">
             <div class="flex">
-                <div class="logo flex items-center max-w-20">
+                <div class="logo flex items-center max-w-20 md:max-w-full">
                     <NuxtLink to="/">
                         <img src="../assets/img/logo-white.svg" alt="">
                     </NuxtLink>
                 </div>
-                <div class="menu-bar text-white flex-auto flex items-center justify-center gap-8 hidden">
+                <div class="menu-bar text-white flex-auto flex items-center justify-center gap-8">
                     <NuxtLink to="/" class=" hover:text-secondary transition-all duration-500 relative before:absolute before:content-[''] before:bg-secondary before:w-2 before:h-[5px] before:left-[50%] before:-translate-x-1 before:transition-all before:duration-200 before:rounded-b-[20px] before:-top-[48px] hover:before:-top-[42px]">Home</NuxtLink>
                     <NuxtLink to="/features" class=" hover:text-secondary transition-all duration-500 relative before:absolute before:content-[''] before:bg-secondary before:w-2 before:h-[5px] before:left-[50%] before:-translate-x-1 before:transition-all before:duration-200 before:rounded-b-[20px] before:-top-[48px] hover:before:-top-[42px]">Features</NuxtLink>
                     <NuxtLink to="/company" class=" hover:text-secondary transition-all duration-500 relative before:absolute before:content-[''] before:bg-secondary before:w-2 before:h-[5px] before:left-[50%] before:-translate-x-1 before:transition-all before:duration-200 before:rounded-b-[20px] before:-top-[48px] hover:before:-top-[42px]">Company</NuxtLink>
@@ -15,7 +15,7 @@
                     <NuxtLink to="/pricing-page" class=" hover:text-secondary transition-all duration-500 relative before:absolute before:content-[''] before:bg-secondary before:w-2 before:h-[5px] before:left-[50%] before:-translate-x-1 before:transition-all before:duration-200 before:rounded-b-[20px] before:-top-[48px] hover:before:-top-[42px]">Pricing</NuxtLink>
                     <NuxtLink to="/registration-new" class=" hover:text-secondary transition-all duration-500 relative before:absolute before:content-[''] before:bg-secondary before:w-2 before:h-[5px] before:left-[50%] before:-translate-x-1 before:transition-all before:duration-200 before:rounded-b-[20px] before:-top-[48px] hover:before:-top-[42px]">Help Center</NuxtLink>
                 </div>
-                <div class="login-btn text-white flex gap-8 items-center hidden">
+                <div class="login-btn text-white flex gap-8 items-center">
                     <NuxtLink class="hover:text-secondary transition-all duration-500 relative before:absolute before:content-[''] before:bg-secondary before:w-2 before:h-[5px] before:left-[50%] before:-translate-x-1 before:transition-all before:duration-200 before:rounded-b-[20px] before:-top-[48px] hover:before:-top-[42px]" to="/login-new">Login</NuxtLink>
                     <SecondaryBtn>
                         <NuxtLink to="/registration-new">Try for Free</NuxtLink>
