@@ -267,8 +267,7 @@ export default {
                 <div class="container lg:mx-auto">
                     <div class="pt-5 lg:pt-[100px] pb-[60px] lg:pb-[135px] px-4 lg:px-40 mt-[-200px] bg-white rounded-[20px]">
                         <div class="services-box grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-[30px] mb-14">
-                            <div v-for="service in services"
-                                class="service-item py-[30px] px-5 lg:px-8 lg:pt-10 lg:pb-8 bg-dark7 rounded-xl border-2 border-dark7 hover:border-dark5 hover:bg-white transition-colors duration-200">
+                            <div v-for="service in services" class="service-item py-[30px] px-5 lg:px-8 lg:pt-10 lg:pb-8 bg-dark7 rounded-xl border-2 border-dark7 hover:border-dark5 hover:bg-white transition-colors duration-200">
                                 <div class="service-icon mb-8">
                                     <img :src="service.icon" alt="" class=" max-w-full">
                                 </div>
